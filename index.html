@@ -5,16 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>After 10</title>
+    <title>Pasteleria Torres</title>
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reseteo.css">
     <script defer src="./js/productos.js"></script>
     <script defer src="./js/interaccioncarrito.js"></script>
     <script defer src="./js/carrito.js"></script>
+    <script defer src="./js/appi_clima.js"></script>
 </head>
 
 <body>
+     
+    <main>
+        <h1>Eres curioso? consulta el clima en tu ciudad</h1>
+        <div class="search-form">
+          <form id="search-form">
+            <div class="searchbox">
+              <input type="text" autocomplete="off" placeholder="Buscar ciudad..." class="search" id="searchbox" />
+            </div>
+          </form>
+        </div>
+        <div class="weather-card" id="card">
+          <div class="city" id="city">Lima, PE</div>
+          <div class="date" id="date">10/14/2020</div>
+          <div class="temperature">
+            <img src="images/temp-mid.png" class="temp-img" id="temp-img" />
+            <div class="temp" id="temp">14c</div>
+          </div>
+          <div class="weather" id="weather">Sol</div>
+          <div class="range" id="range">12c / 18c</div>
+        </div>
+      </main>
 
     <header>
         <h1 id="titulo" class="titulo">Pasteleria Torres</h1>
